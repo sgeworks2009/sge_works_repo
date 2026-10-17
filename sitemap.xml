@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.sgeworks.in/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/hero-cylindrical-chrome-machining.jpg</image:loc>
+      <image:title>Hard Chrome Plated Hydraulic Cylinder Rods Machining</image:title>
+      <image:caption>Hard chrome plating and precision machining facility at MIDC Bhosari, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/hard-chrome-plating-tanks-bhosari.jpg</image:loc>
+      <image:title>Industrial Hard Chrome Plating Immersion Tanks</image:title>
+      <image:caption>2,000-liter hard chrome plating chemical tanks at SGE Works Bhosari</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/precision-cylindrical-grinding-shafts.jpg</image:loc>
+      <image:title>Precision Cylindrical Grinding for Shafts and Rollers</image:title>
+      <image:caption>Precision cylindrical grinding up to 3000 mm length and 400 mm diameter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/facility-inspection-quality-technician.jpg</image:loc>
+      <image:title>Quality Inspection and Micrometer Precision Tolerances</image:title>
+      <image:caption>Quality inspection technician measuring plating thickness and surface roughness</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/flash-chrome-plating-mold-dies.jpg</image:loc>
+      <image:title>Flash Chrome Plating on Mold Dies and Tooling</image:title>
+      <image:caption>Flash chrome plating on plastic injection mold dies and stamping tools</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/buffing-polishing-mirror-finish.jpg</image:loc>
+      <image:title>Buffing and Mirror Polishing</image:title>
+      <image:caption>Superfinishing and mirror buffing for low friction hydraulic surfaces</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sgeworks.in/assets/images/deplating-chrome-stripping-bath.jpg</image:loc>
+      <image:title>De-Plating and Chrome Stripping Tank</image:title>
+      <image:caption>Safe chemical de-plating and chrome stripping without parent metal loss</image:caption>
+    </image:image>
+  </url>
+</urlset>

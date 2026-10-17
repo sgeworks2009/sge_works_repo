@@ -1,0 +1,116 @@
+/**
+ * SGE Works — Design System Variables & Tokens
+ * Aesthetic: Industrial Editorial
+ * Palette: Deep Industrial Navy, Machined Chrome, Restrained Furnace Orange
+ */
+
+:root {
+  /* Surface & Background Colors — Default Light System */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-deep: #f8fafc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container: #ffffff;
+  --color-surface-container-high: #f1f5f9;
+  --color-surface-container-highest: #e2e8f0;
+  --color-surface-subtle: #f8fafc;
+  --color-surface-bright: #ffffff;
+
+  /* Typography / Text Colors */
+  --color-text-high-contrast: #0f172a;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #334155;
+  --color-text-muted: #64748b;
+  --color-chrome-silver: #334155;
+  --color-chrome-muted: #64748b;
+  --color-outline: #94a3b8;
+  --color-outline-variant: #cbd5e1;
+
+  /* Accent & Mechanical Signaling (Furnace Orange) */
+  --color-furnace-orange: #f97316;
+  --color-furnace-orange-deep: #ea580c;
+  --color-furnace-orange-hover: #fb923c;
+  --color-furnace-orange-active: #c2410c;
+
+  /* STRICT THREE-COLOR THEME PALETTE:
+     1. Color 1: Industrial Steel Grey (#172233)
+     2. Color 2: Pure Cool White (#ffffff)
+     3. Color 3: Soft Slate Grey (#f1f5f9) - The exact color behind Grinding Stages
+  */
+  --theme-steel-grey: #172233;
+  --theme-steel-grey-surface: #202d42;
+  --theme-steel-grey-border: #2e3e57;
+  --theme-steel-grey-text: #ffffff;
+  --theme-steel-grey-muted: #cbd5e1;
+
+  --theme-pure-white: #ffffff;
+  --theme-pure-white-surface: #ffffff;
+  --theme-pure-white-subtle: #f8fafc;
+  --theme-pure-white-border: #e2e8f0;
+  --theme-pure-white-text: #0f172a;
+  --theme-pure-white-muted: #475569;
+
+  --theme-slate-tint: #f1f5f9;
+  --theme-slate-tint-surface: #ffffff;
+  --theme-slate-tint-subtle: #e2e8f0;
+  --theme-slate-tint-border: #cbd5e1;
+  --theme-slate-tint-text: #0f172a;
+  --theme-slate-tint-muted: #475569;
+
+  /* Backward compatibility alias: theme-cool-white maps to theme-slate-tint */
+  --theme-cool-white: #f1f5f9;
+  --theme-cool-white-surface: #ffffff;
+  --theme-cool-white-subtle: #e2e8f0;
+  --theme-cool-white-border: #cbd5e1;
+  --theme-cool-white-text: #0f172a;
+  --theme-cool-white-muted: #475569;
+
+  /* Legacy dark-blue token remapped directly to pure-white to eliminate all dark navy */
+  --theme-dark-blue: #ffffff;
+  --theme-dark-blue-surface: #ffffff;
+  --theme-dark-blue-border: #e2e8f0;
+
+  /* Editorial Light Surfaces */
+  --color-editorial-bg: #f1f5f9;
+  --color-editorial-surface: #ffffff;
+  --color-editorial-subtle: #e2e8f0;
+  --color-editorial-border: #cbd5e1;
+  --color-editorial-text: #0f172a;
+  --color-editorial-muted: #475569;
+
+  /* Hairlines & Planar Dividers */
+  --color-hairline: #e2e8f0;
+  --color-hairline-alpha: rgba(15, 23, 42, 0.08);
+  --color-hairline-bright: rgba(15, 23, 42, 0.16);
+
+  /* Typography Stacks (Studio Reference System - Pure Proportional Inter) */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Spacing Scale */
+  --space-2xs: 0.125rem; /* 2px */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2.5rem;    /* 40px */
+  --space-2xl: 4rem;     /* 64px */
+  --space-3xl: 6rem;     /* 96px */
+
+  /* Layout Containers & Gutters */
+  --container-max-width: 1280px;
+  --gutter-desktop: 2rem;
+  --gutter-mobile: 1.25rem;
+  --nav-height: 80px;
+  --scroll-offset: 85px;
+
+  /* Sharp Geometric Shapes (0px Radius Strict Industrial Requirement) */
+  --border-radius: 0px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
