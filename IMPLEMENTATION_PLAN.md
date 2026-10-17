@@ -89,7 +89,6 @@ sgeworks/
 │   │       └── export-oriented-engineering.webp
 │   └── icons/
 │       └── logo.svg           # SGE Works vector brand mark
-├── stitch_reference/          # Preserved original Stitch files and raw assets (unmodified reference)
 ├── IMPLEMENTATION_PLAN.md     # This comprehensive engineering roadmap
 └── README.md                  # Operational guide, deployment notes, and SEO checklist
 ```

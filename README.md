@@ -59,7 +59,6 @@ sgeworks/
 │       ├── deplating-chrome-stripping-bath.jpg
 │       ├── components/        # 8 verified sample component photographs
 │       └── industries/        # 7 industrial sector photographs
-└── stitch_reference/          # Preserved raw Google Stitch exports and brochure reference
 ```
 
 ---
