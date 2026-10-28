@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Finolex Dynamic Fluid Mark -->
+  <path d="M 12 42 C 22 15, 30 14, 46 14 C 38 24, 34 32, 28 44 Z" fill="#0284c7"/>
+  <circle cx="48" cy="22" r="5" fill="#e11d48"/>
+  <!-- Finolex Wordmark -->
+  <text x="60" y="38" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#024793">Finolex</text>
+  <text x="178" y="38" font-family="'Inter', sans-serif" font-size="16" font-weight="900" fill="#0284c7" letter-spacing="1">PIPES</text>
+</svg>

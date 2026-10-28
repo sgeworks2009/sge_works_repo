@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Automotive Die Cast Flame Motif -->
+  <path d="M 14 42 L 20 18 L 26 28 L 32 12 L 38 28 L 44 18 L 50 42 Z" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <circle cx="32" cy="34" r="4" fill="#ea580c"/>
+  <!-- Renuka Wordmark -->
+  <text x="60" y="32" font-family="'Inter', sans-serif" font-size="22" font-weight="900" letter-spacing="1.5" fill="#0f172a">RENUKA</text>
+  <text x="62" y="46" font-family="'Inter', sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#475569">AUTO COMPONENTS</text>
+</svg>

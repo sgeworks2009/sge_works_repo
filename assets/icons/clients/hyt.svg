@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- HYT Engineering Diamond Monogram -->
+  <polygon points="28,12 46,30 28,48 10,30" stroke="#0f172a" stroke-width="3" fill="none"/>
+  <circle cx="28" cy="30" r="5" fill="#d34727"/>
+  <!-- HYT Wordmark -->
+  <text x="58" y="34" font-family="'Inter', sans-serif" font-size="24" font-weight="900" letter-spacing="2" fill="#0f172a">HYT</text>
+  <text x="58" y="47" font-family="'Inter', sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#475569">ENGINEERING CO.</text>
+</svg>

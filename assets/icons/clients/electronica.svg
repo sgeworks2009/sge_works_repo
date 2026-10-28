@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Electronica Waveform / EDM Pulse Symbol in Precision Green -->
+  <path d="M 10 30 L 20 30 L 26 14 L 34 46 L 40 30 L 50 30" stroke="#059669" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <!-- Wordmark in Deep Charcoal -->
+  <text x="58" y="32" font-family="'Inter', sans-serif" font-size="18" font-weight="900" letter-spacing="1" fill="#0f172a">ELECTRONICA</text>
+  <text x="60" y="46" font-family="'Inter', sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#475569">MACHINE TOOLS</text>
+</svg>

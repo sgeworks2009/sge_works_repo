@@ -54,7 +54,7 @@
 }
 
 .brand-logo-img {
-  height: 38px;
+  height: 48px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -170,7 +170,7 @@
   }
 
   .brand-logo-img {
-    height: 30px;
+    height: 38px;
     width: auto;
   }
 
@@ -585,12 +585,48 @@ body.mobile-menu-active .floating-dock {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: visible !important;
+  flex-shrink: 0;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   border-top: 1px solid var(--theme-steel-grey-border);
   border-bottom: 1px solid var(--theme-steel-grey-border);
   background-color: var(--theme-steel-grey);
+}
+
+/* Dual Watermarks in Technical Specifications: Left and Right */
+.spec-strip-grid::before {
+  content: '';
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 240px;
+  background-image: url('../icons/logo-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.spec-strip-grid::after {
+  content: '';
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 240px;
+  background-image: url('../icons/logo-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @media (max-width: 1024px) {
@@ -859,35 +895,54 @@ body.mobile-menu-active .floating-dock {
   color: #ffffff;
 }
 
-/* Slider Controls */
+/* Slider Controls — Flanking Side Navigation Buttons */
 .slider-controls {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--space-sm);
-  margin-top: var(--space-md);
+  position: static;
 }
 
 .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
   width: 44px;
   height: 44px;
-  background-color: var(--color-surface-container);
-  border: 1px solid var(--color-hairline);
-  color: var(--color-chrome-silver);
+  background-color: rgba(23, 34, 51, 0.92);
+  border: 1px solid var(--theme-steel-grey-border);
+  color: #ffffff;
+  backdrop-filter: blur(4px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-family: var(--font-body);
   font-size: 1.25rem;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.slider-prev {
+  left: 0;
+}
+
+.slider-next {
+  right: 0;
 }
 
 .slider-btn:hover,
-.slider-btn:focus {
-  background-color: var(--color-surface-subtle);
+.slider-btn:focus-visible {
+  background-color: var(--color-furnace-orange);
   border-color: var(--color-furnace-orange);
-  color: var(--color-furnace-orange);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+@media (max-width: 640px) {
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    background-color: rgba(23, 34, 51, 0.95);
+  }
 }
 
 /* ==========================================================================
@@ -926,71 +981,101 @@ body.mobile-menu-active .floating-dock {
   box-shadow: none;
 }
 
-/* Default collapsed icon-only card */
+/* Circular Quick-Connect Floating Action Buttons (Client Exception) */
 .dock-action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.98);
-  border: 1px solid #cbd5e1;
-  border-radius: 0;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 9999px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: width 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-              padding 0.32s cubic-bezier(0.16, 1, 0.3, 1),
+  position: relative;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              padding 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               background-color var(--transition-fast),
-              border-color var(--transition-fast),
+              transform var(--transition-fast),
               box-shadow var(--transition-fast);
 }
 
-.dock-action-btn:hover,
-.dock-action-btn:focus {
-  background-color: #ffffff;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
-}
-
-/* WhatsApp & Call Specific Styling */
 .dock-whatsapp {
-  border-left: 3px solid #25D366;
-}
-
-.dock-whatsapp:hover,
-.dock-whatsapp:focus {
-  border-color: #25D366;
-}
-
-.dock-call {
-  border-left: 3px solid var(--color-furnace-orange);
-}
-
-.dock-call:hover,
-.dock-call:focus {
-  border-color: var(--color-furnace-orange);
-}
-
-.dock-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  transition: transform var(--transition-fast), fill var(--transition-fast);
+  background-color: #25D366;
+  border-color: #22c55e;
 }
 
 .dock-whatsapp .dock-icon {
-  fill: #25D366;
+  fill: #ffffff;
+  width: 26px;
+  height: 26px;
+}
+
+.dock-call {
+  background-color: #172233;
+  border-color: var(--color-furnace-orange);
 }
 
 .dock-call .dock-icon {
   fill: var(--color-furnace-orange);
+  width: 24px;
+  height: 24px;
+}
+
+/* Attractive subtle pulse ring on WhatsApp button */
+.dock-whatsapp::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 9999px;
+  border: 2px solid #25D366;
+  opacity: 0.7;
+  animation: dockPulse 2.8s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes dockPulse {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1.24);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.24);
+    opacity: 0;
+  }
+}
+
+.dock-whatsapp:hover,
+.dock-whatsapp:focus-visible {
+  background-color: #20ba59;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+}
+
+.dock-call:hover,
+.dock-call:focus-visible {
+  background-color: #0f172a;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(211, 71, 39, 0.4);
+}
+
+.dock-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
 }
 
 .dock-action-btn:hover .dock-icon {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 /* Text Column — Collapsed by Default */
@@ -1004,7 +1089,7 @@ body.mobile-menu-active .floating-dock {
   overflow: hidden;
   white-space: nowrap;
   pointer-events: none;
-  transition: max-width 0.32s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: max-width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               opacity 0.22s ease,
               margin-left 0.25s ease;
 }
@@ -1017,11 +1102,10 @@ body.mobile-menu-active .floating-dock {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 2px;
-  transition: color var(--transition-fast);
 }
 
 .dock-whatsapp .dock-label-type {
-  color: #16a34a;
+  color: #dcfce7;
 }
 
 .dock-call .dock-label-type {
@@ -1031,10 +1115,17 @@ body.mobile-menu-active .floating-dock {
 .dock-label-num {
   font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: #0f172a;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
+}
+
+.dock-whatsapp .dock-label-num {
+  color: #ffffff;
+}
+
+.dock-call .dock-label-num {
+  color: #ffffff;
 }
 
 /* ==========================================================================
@@ -1045,16 +1136,34 @@ body.mobile-menu-active .floating-dock {
 .floating-dock:has(:focus-visible) .dock-action-btn,
 .floating-dock.is-open .dock-action-btn {
   width: auto;
-  min-width: 46px;
-  padding: 0.55rem 0.95rem;
+  min-width: 52px;
+  padding: 0.55rem 1.15rem;
   justify-content: flex-start;
+  border-radius: 9999px;
 }
 
 .floating-dock:hover .dock-text-col,
 .floating-dock:has(:focus-visible) .dock-text-col,
 .floating-dock.is-open .dock-text-col {
-  max-width: 200px;
+  max-width: 220px;
   opacity: 1;
-  margin-left: 0.65rem;
+  margin-left: 0.75rem;
   pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .dock-action-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .dock-whatsapp .dock-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dock-call .dock-icon {
+    width: 22px;
+    height: 22px;
+  }
 }

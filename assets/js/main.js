@@ -78,6 +78,34 @@
       });
     }
 
+    // 4b. Interactive Service Image to Gallery Component Shortcut
+    const serviceShortcuts = document.querySelectorAll('.service-gallery-shortcut');
+    if (serviceShortcuts.length) {
+      serviceShortcuts.forEach(function (shortcut) {
+        function triggerGalleryJump(e) {
+          const targetId = shortcut.getAttribute('data-gallery-target');
+          if (!targetId) return;
+          const targetTile = document.getElementById(targetId);
+          if (targetTile) {
+            e.preventDefault();
+            targetTile.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetTile.classList.add('is-highlighted');
+            targetTile.classList.add('is-touched');
+            setTimeout(function () {
+              targetTile.classList.remove('is-highlighted');
+            }, 2400);
+          }
+        }
+
+        shortcut.addEventListener('click', triggerGalleryJump);
+        shortcut.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            triggerGalleryJump(e);
+          }
+        });
+      });
+    }
+
     // 5. Persistent Floating Quick-Connect Dock Interaction
     const floatingDock = document.querySelector('.floating-dock');
     if (floatingDock) {

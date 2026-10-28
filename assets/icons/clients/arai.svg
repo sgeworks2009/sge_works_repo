@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- ARAI Triangle Shield Crest -->
+  <polygon points="28,12 46,46 10,46" stroke="#004b87" stroke-width="3" fill="none"/>
+  <circle cx="28" cy="36" r="4" fill="#ea580c"/>
+  <!-- ARAI Wordmark -->
+  <text x="56" y="32" font-family="'Inter', sans-serif" font-size="22" font-weight="900" letter-spacing="2" fill="#004b87">ARAI</text>
+  <text x="58" y="46" font-family="'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#475569">PROGRESS THROUGH RESEARCH</text>
+</svg>
