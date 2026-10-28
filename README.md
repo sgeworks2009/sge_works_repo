@@ -95,7 +95,7 @@ sgeworks/
 
 ## 4. Centralized Business Configuration
 
-To modify phone numbers, official addresses, or email addresses, edit **`assets/js/site-config.js`**. All business parameters are centralized there in one single place.
+To modify phone numbers, official addresses, or working hours, edit **`assets/js/site-config.js`**. All business parameters are centralized there in one single place.
 
 Example snippet from `assets/js/site-config.js`:
 ```javascript
@@ -103,6 +103,7 @@ window.SGE_CONFIG = {
   business: {
     legalName: "Shree Gurudatta Engineering Works",
     establishedYear: 2009,
+    leader: "D. S. Mahajan",
     ...
   },
   contact: {
@@ -128,7 +129,7 @@ window.SGE_CONFIG = {
 - [x] **Single H1 Tag**: Confidently positioned on hero banner with brand and core specialization.
 - [x] **Logical Heading Hierarchy**: Proper H2 and H3 parent-child hierarchy throughout all sections.
 - [x] **Local SEO Triad**: Naturally establishes *Shree Gurudatta Engineering Works* in *MIDC Bhosari, Pune, Maharashtra* with targeted terms (*Hard chrome plating Pune, cylindrical grinding Bhosari, hydraulic cylinder rod chrome plating*).
-- [x] **Structured Data (JSON-LD)**: Enhanced `LocalBusiness` schema with address, geo-coordinates, telephone, email, foundingDate (2009), areaServed, and `hasOfferCatalog` listing all 5 services.
+- [x] **Structured Data (JSON-LD)**: Enhanced `LocalBusiness` schema with address, geo-coordinates, telephone, foundingDate (2009), areaServed, and `hasOfferCatalog` listing all services.
 - [x] **Open Graph & Twitter Cards**: Complete social graph meta tags with local absolute image references.
 - [x] **Sitemap & Robots**: Valid `sitemap.xml` pointing to canonical homepage, and `robots.txt` referencing the sitemap.
 - [x] **Image SEO & Performance**: Descriptive filenames (`hard-chrome-plating-tanks-bhosari.jpg`, etc.), natural alt text, native `width` and `height` attributes to prevent CLS, `loading="lazy"` below fold, and `loading="eager"` on hero.
@@ -140,26 +141,26 @@ window.SGE_CONFIG = {
 
 Because the website uses static assets without build dependencies, it can be deployed instantly to any static web hosting platform:
 
-### 1. Cloudflare Pages
+### 1. Vercel
+- Connect the GitHub repository directly to Vercel.
+- Framework Preset: **Other**.
+- Build Command: *None (empty)*.
+- Output Directory: `.` (root).
+
+### 2. Cloudflare Pages
 1. Connect your Git repository or upload the project folder.
 2. Build command: *None (leave blank)*.
 3. Build output directory: `.` (root).
 
-### 2. GitHub Pages
+### 3. GitHub Pages
 1. Push this repository to GitHub.
 2. In repository Settings > Pages, select Deploy from branch > `main` > `/ (root)`.
 
-### 3. Netlify / Vercel
-1. Run `npx netlify deploy --prod` or drag-and-drop the directory into Netlify Drop.
-
-### 4. Traditional Apache / NGINX / CPanel
-1. Upload all files into `public_html` or `/var/www/html/`.
-2. Ensure HTTPS is enabled and `sitemap.xml` / `robots.txt` are at the webroot.
-
 ---
 
-## 7. Remaining Client Confirmations & Placeholders
+## 7. Client Specifications & Design Integration (Completed)
 
-1. **Production Domain**: The canonical URL and structured data currently use `https://www.sgeworks.in/` as a placeholder. Once the client confirms the official registered domain, update this URL in `index.html`, `sitemap.xml`, and `robots.txt`.
-2. **GSTIN / Business Hours**: Provisional hours (Monday–Saturday 09:00 to 19:00) and GSTIN can be formally populated in `site-config.js` and `index.html` upon client sign-off.
-3. **Client Logos**: Client names from the brochure (Bosch, SKF, Finolex, ARAI, Electronica, HYT, VR Precision, Verensol) are displayed in an understated typography rail in accordance with brochure panel 07.
+1. **Capacities & Hardness Standards**: 3,000 mm hard chrome length capacity, 3,000 L / 2,000 L chemical plating tanks, and 62+ HRC (800–1,000 HV) hardness standards fully verified across all sections.
+2. **Weekly Holiday**: Thursday weekly off formally reflected across working hours, quick contact cards, and footer.
+3. **Client Roster & Renuka Tools**: Added Renuka Tools along with vector badge assets for Bosch, SKF, Finolex, ARAI, Electronica, HYT, and VR Precision.
+4. **Dual-Grid Showcase**: Features an interactive component grid alongside an uncaptioned Pinterest-style masonry workshop showcase grid.
