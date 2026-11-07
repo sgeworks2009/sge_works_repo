@@ -1487,8 +1487,9 @@
 .table-responsive-box {
   position: relative;
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
   border: 1px solid var(--theme-pure-white-border);
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
@@ -1503,6 +1504,7 @@
   transform: translateY(-50%);
   width: 320px;
   height: 320px;
+  max-height: 85%;
   background-image: url('../icons/logo-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -1520,6 +1522,7 @@
   transform: translateY(-50%);
   width: 320px;
   height: 320px;
+  max-height: 85%;
   background-image: url('../icons/logo-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -1532,8 +1535,9 @@
 .engineering-table {
   position: relative;
   z-index: 2;
-  width: 100%;
-  min-width: 680px;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
   border-collapse: collapse;
   text-align: left;
 }
@@ -1550,9 +1554,9 @@
 }
 
 .engineering-table th {
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 0.75rem;
   border-bottom: 2px solid #cbd5e1;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .engineering-table tbody tr {
@@ -1565,23 +1569,24 @@
 }
 
 .engineering-table td {
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 0.75rem;
   font-size: 0.8125rem;
   color: #334155;
   line-height: 1.4;
+  white-space: normal;
 }
 
 .engineering-table td.col-sector {
   font-weight: 700;
   color: #0f172a;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .engineering-table td.col-depth {
   font-family: var(--font-body);
   font-weight: 600;
   color: var(--color-furnace-orange-deep);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .table-footer-notes {
@@ -1594,6 +1599,174 @@
   font-size: 0.6875rem;
   color: #64748b;
   text-transform: uppercase;
+}
+
+/* Dark Variant for Operational Plant Infrastructure Matrix */
+.table-responsive-box.table-responsive-dark {
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  background-color: #131d2e;
+  border: 1px solid #2a3b54;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.table-responsive-box.table-responsive-dark::before,
+.table-responsive-box.table-responsive-dark::after {
+  opacity: 0.02;
+}
+
+.engineering-table-dark thead tr {
+  background-color: #0b1320;
+  color: #ffffff;
+  border-bottom: 2px solid #2a3b54;
+}
+
+.engineering-table-dark th {
+  color: #ffffff;
+  border-bottom: 2px solid #2a3b54;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: normal;
+}
+
+.engineering-table-dark tbody tr {
+  border-bottom: 1px solid #1e2c40;
+  background-color: transparent;
+  transition: background-color var(--transition-fast);
+}
+
+.engineering-table-dark tbody tr:hover {
+  background-color: #1a273b;
+}
+
+.engineering-table-dark td {
+  color: #cbd5e1;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.engineering-table-dark td.col-sector {
+  color: #ffffff;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.engineering-table-dark td.col-depth {
+  color: var(--color-furnace-orange);
+  font-weight: 600;
+  white-space: normal;
+}
+
+/* Mobile Non-Scrolling Card Layout for All Tables */
+@media (max-width: 768px) {
+  .table-responsive-box,
+  .table-responsive-box.table-responsive-dark {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .table-responsive-box::before,
+  .table-responsive-box::after {
+    display: none !important;
+  }
+
+  .engineering-table,
+  .engineering-table-dark {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .engineering-table thead,
+  .engineering-table-dark thead {
+    display: none !important;
+  }
+
+  .engineering-table tbody,
+  .engineering-table-dark tbody {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .engineering-table tbody tr,
+  .engineering-table-dark tbody tr {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: var(--space-md);
+    padding: 1rem 1.15rem;
+    border-radius: 6px;
+  }
+
+  .engineering-table tbody tr {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  }
+
+  .engineering-table-dark tbody tr {
+    background: #131d2e !important;
+    border: 1px solid #2a3b54 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .engineering-table td,
+  .engineering-table-dark td {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    gap: 0.75rem;
+    padding: 0.5rem 0 !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    text-align: right !important;
+    font-size: 0.8125rem !important;
+  }
+
+  .engineering-table-dark td {
+    border-bottom: 1px solid #1e2c40 !important;
+  }
+
+  .engineering-table td:last-child,
+  .engineering-table-dark td:last-child {
+    border-bottom: none !important;
+  }
+
+  .engineering-table td::before,
+  .engineering-table-dark td::before {
+    content: attr(data-label);
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  .engineering-table-dark td::before {
+    color: #94a3b8;
+  }
+
+  .engineering-table td.col-sector,
+  .engineering-table-dark td.col-sector {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    padding-bottom: 0.65rem !important;
+    margin-bottom: 0.35rem;
+    border-bottom: 2px solid var(--color-furnace-orange) !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .engineering-table td.col-sector::before,
+  .engineering-table-dark td.col-sector::before {
+    display: none !important;
+  }
 }
 
 /* ==========================================================================
