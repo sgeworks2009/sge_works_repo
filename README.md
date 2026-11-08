@@ -107,11 +107,14 @@ window.SGE_CONFIG = {
     ...
   },
   location: {
-    plot: "Plot No- P4P RIG 108",
-    landmark: "Near Shitole Weight Bridge, MIDC Chowk",
+    plot: "Plot No. PAP BG 108",
+    landmark: "Near Gujar Gas Agency, Opposite L&T Switch Gear",
     area: "MIDC Bhosari",
     city: "Pune",
     postalCode: "411026",
+    state: "Maharashtra",
+    country: "India",
+    googleMapsUrl: "https://share.google/axt5hxOV1GyJW1bOu",
     ...
   }
 };
@@ -124,7 +127,7 @@ window.SGE_CONFIG = {
 - [x] **Single H1 Tag**: Confidently positioned on hero banner with brand and core specialization.
 - [x] **Logical Heading Hierarchy**: Proper H2 and H3 parent-child hierarchy throughout all sections.
 - [x] **Local SEO Triad**: Naturally establishes *Shree Gurudatta Engineering Works* in *MIDC Bhosari, Pune, Maharashtra* with targeted terms (*Hard chrome plating Pune, cylindrical grinding Bhosari, hydraulic cylinder rod chrome plating*).
-- [x] **Structured Data (JSON-LD)**: Enhanced `LocalBusiness` schema with address, geo-coordinates, telephone, foundingDate (2009), areaServed, and `hasOfferCatalog` listing all services.
+- [x] **Structured Data (JSON-LD)**: Enhanced `LocalBusiness` schema with address, Google Maps link (`hasMap` & `sameAs`), telephone, foundingDate (2009), areaServed, and `hasOfferCatalog` listing all services.
 - [x] **Open Graph & Twitter Cards**: Complete social graph meta tags with local absolute image references.
 - [x] **Sitemap & Robots**: Valid `sitemap.xml` pointing to canonical homepage, and `robots.txt` referencing the sitemap.
 - [x] **Image SEO & Performance**: Descriptive filenames (`hard-chrome-plating-tanks-bhosari.jpg`, etc.), natural alt text, native `width` and `height` attributes to prevent CLS, `loading="lazy"` below fold, and `loading="eager"` on hero.

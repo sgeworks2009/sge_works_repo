@@ -49,7 +49,8 @@ window.SGE_CONFIG = {
     state: "Maharashtra",
     postalCode: "411026",
     country: "India",
-    fullAddress: "Plot No. PAP BG 108, Near Gujar Gas Agency, Opposite L&T Switch Gear, MIDC, Bhosari, Pune – 411026, Maharashtra, India"
+    fullAddress: "Plot No. PAP BG 108, Near Gujar Gas Agency, Opposite L&T Switch Gear, MIDC, Bhosari, Pune – 411026, Maharashtra, India",
+    googleMapsUrl: "https://share.google/axt5hxOV1GyJW1bOu"
   },
   technicalCapabilities: {
     maxHardChromeThickness: "Up to 600 μm",
