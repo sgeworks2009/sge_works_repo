@@ -1308,16 +1308,36 @@
 }
 
 @media (max-width: 768px) {
+  .gallery-section {
+    padding-bottom: 2rem;
+  }
+
   .client-masonry-grid {
     column-count: 2;
     column-gap: 0.85rem;
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+  }
+
+  .industries-section {
+    padding-top: 2rem;
   }
 }
 
 @media (max-width: 480px) {
+  .gallery-section {
+    padding-bottom: 1.5rem;
+  }
+
   .client-masonry-grid {
-    column-count: 1;
-    column-gap: 0;
+    column-count: 2;
+    column-gap: 0.65rem;
+    margin-top: var(--space-sm);
+    margin-bottom: 0;
+  }
+
+  .industries-section {
+    padding-top: 1.5rem;
   }
 }
 
@@ -1337,6 +1357,12 @@
 @media (max-width: 768px) {
   .masonry-item {
     margin-bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-item {
+    margin-bottom: 0.65rem;
   }
 }
 
