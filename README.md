@@ -47,17 +47,12 @@ sgeworks/
 │   │   ├── slider.js          # Touch-swipe & keyboard component slider
 │   │   └── main.js            # IntersectionObserver scroll reveals, RFQ form handling
 │   ├── icons/
-│   │   └── logo.svg           # High-precision vector logo mark
+│   │   ├── logo.svg           # High-precision vector logo mark
+│   │   └── clients/           # Official vector partner and client SVG marks
 │   └── images/
-│       ├── hero-cylindrical-chrome-machining.jpg
-│       ├── facility-inspection-quality-technician.jpg
-│       ├── hard-chrome-plating-tanks-bhosari.jpg
-│       ├── flash-chrome-plating-mold-dies.jpg
-│       ├── precision-cylindrical-grinding-shafts.jpg
-│       ├── buffing-polishing-mirror-finish.jpg
-│       ├── deplating-chrome-stripping-bath.jpg
-│       ├── components/        # 8 verified sample component photographs
-│       └── industries/        # 7 industrial sector photographs
+│       ├── enhanced/          # Production WebP and master PNG photography library
+│       ├── industries/        # 7 industrial sector photographs
+│       └── showcase/          # Authentic workshop machinery photographs
 ```
 
 ---

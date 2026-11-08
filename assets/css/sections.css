@@ -1499,37 +1499,39 @@
 .table-responsive-box::before {
   content: '';
   position: absolute;
-  left: 4%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px;
-  height: 320px;
-  max-height: 85%;
+  width: 380px;
+  height: 380px;
+  max-height: 90%;
   background-image: url('../icons/logo-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.045;
+  opacity: 0.18;
   pointer-events: none;
   z-index: 1;
+  filter: contrast(1.1);
 }
 
 .table-responsive-box::after {
   content: '';
   position: absolute;
-  right: 4%;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px;
-  height: 320px;
-  max-height: 85%;
+  width: 380px;
+  height: 380px;
+  max-height: 90%;
   background-image: url('../icons/logo-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.045;
+  opacity: 0.18;
   pointer-events: none;
   z-index: 1;
+  filter: contrast(1.1);
 }
 
 .engineering-table {
@@ -1863,16 +1865,15 @@
 }
 
 .client-card {
-  width: 260px;
-  min-width: 260px;
-  height: 120px;
+  width: 230px;
+  min-width: 230px;
+  height: 96px;
   padding: 1rem 1.25rem;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-top: 3px solid transparent;
   border-radius: 6px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1890,60 +1891,49 @@
 }
 
 .client-logo {
-  height: 32px;
+  height: 52px;
+  max-height: 56px;
   width: auto;
-  max-width: 150px;
+  max-width: 185px;
   object-fit: contain;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   transition: transform var(--transition-fast);
 }
 
 .client-card:hover .client-logo {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 
 .client-name {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  line-height: 1.2;
+  display: none;
 }
 
 .client-sub {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-top: 0.25rem;
+  display: none;
 }
 
 @media (max-width: 768px) {
   .client-card {
-    width: 220px;
-    min-width: 220px;
-    height: 104px;
-    padding: 0.75rem 0.85rem;
+    width: 185px;
+    min-width: 185px;
+    height: 78px;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
   }
 
   .client-logo {
-    height: 26px;
-    margin-bottom: 0.25rem;
+    height: 40px;
+    max-height: 44px;
+    max-width: 150px;
+    margin-bottom: 0;
   }
 
   .client-name {
-    font-size: 0.925rem;
-    color: #0f172a;
+    display: none;
   }
 
   .client-sub {
-    font-size: 0.625rem;
-    color: #64748b;
+    display: none;
   }
 
   .clients-marquee-row:not(:last-child) {
