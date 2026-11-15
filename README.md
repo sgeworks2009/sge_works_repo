@@ -114,7 +114,7 @@ window.SGE_CONFIG = {
     postalCode: "411026",
     state: "Maharashtra",
     country: "India",
-    googleMapsUrl: "https://share.google/axt5hxOV1GyJW1bOu",
+    googleMapsUrl: "https://maps.app.goo.gl/M6rXuKqXJCirgU9Q9",
     ...
   }
 };

@@ -13,6 +13,7 @@ window.SGE_CONFIG = {
     brandName: "SGE Works",
     tagline: "Industrial Hard Chrome Plating & Surface Engineering",
     establishedYear: 2009,
+    experienceStatement: "15+ Years of Industrial Expertise",
     primarySpecialization: "Hard Chrome Plating & Job Works",
     domain: "https://sgeworks.com/",
     promoters: [
@@ -50,7 +51,7 @@ window.SGE_CONFIG = {
     postalCode: "411026",
     country: "India",
     fullAddress: "Plot No. PAP BG 108, Near Gujar Gas Agency, Opposite L&T Switch Gear, MIDC, Bhosari, Pune – 411026, Maharashtra, India",
-    googleMapsUrl: "https://share.google/axt5hxOV1GyJW1bOu"
+    googleMapsUrl: "https://maps.app.goo.gl/M6rXuKqXJCirgU9Q9"
   },
   technicalCapabilities: {
     maxHardChromeThickness: "Up to 600 μm",
