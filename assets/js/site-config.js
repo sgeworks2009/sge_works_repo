@@ -11,6 +11,8 @@ window.SGE_CONFIG = {
   business: {
     legalName: "Shree Gurudatta Engineering Works",
     brandName: "SGE Works",
+    alternateBrandName: "SGEWORKS",
+    alternateNames: ["SGE Works", "SGEWORKS"],
     tagline: "Industrial Hard Chrome Plating & Surface Engineering",
     establishedYear: 2009,
     experienceStatement: "15+ Years of Industrial Expertise",
@@ -27,6 +29,7 @@ window.SGE_CONFIG = {
     phoneTel: "+918857894141",
     directorPhoneTel: "+919665844040",
     email: "sgeworks2009@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/company/145451192",
     whatsappNumber: "918857894141",
     whatsappDefaultMessage: "Hello SGE Works, I have an inquiry regarding Hard Chrome Plating / Precision Grinding."
   },
